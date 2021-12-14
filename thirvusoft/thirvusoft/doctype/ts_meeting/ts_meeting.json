@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MEET.####",
+ "creation": "2021-12-11 14:02:51.036673",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_meeting_name",
+  "ts_date",
+  "ts_from_time",
+  "ts_to_time",
+  "ts_duration",
+  "ts_member",
+  "ts_location",
+  "ts_room",
+  "ts_clocation"
+ ],
+ "fields": [
+  {
+   "fieldname": "ts_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ts_location",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "None\nClient\nOffice",
+   "reqd": 1
+  },
+  {
+   "columns": 10,
+   "fieldname": "ts_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "TS Member",
+   "options": "TS Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ts_from_time",
+   "fieldtype": "Time",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "ts_to_time",
+   "fieldtype": "Time",
+   "label": "To Time"
+  },
+  {
+   "fieldname": "ts_duration",
+   "fieldtype": "Float",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Duration",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ts_location==\"Office\"",
+   "fieldname": "ts_room",
+   "fieldtype": "Select",
+   "label": "Room Name",
+   "options": "None\nBeeman\nBarathan\nDwaraka\nKanchi\nKubera\nNakula\nYekalaiva"
+  },
+  {
+   "depends_on": "eval:doc.ts_location==\"Client\"",
+   "fieldname": "ts_clocation",
+   "fieldtype": "Data",
+   "label": "Client Location"
+  },
+  {
+   "fieldname": "ts_meeting_name",
+   "fieldtype": "Data",
+   "label": "Meeting Name",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-13 16:39:17.267071",
+ "modified_by": "Administrator",
+ "module": "Thirvusoft",
+ "name": "TS Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
