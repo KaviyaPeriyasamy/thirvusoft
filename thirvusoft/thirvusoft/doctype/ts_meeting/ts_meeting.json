@@ -54,11 +54,10 @@
   },
   {
    "fieldname": "ts_duration",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Duration",
-   "read_only": 1
+   "label": "Duration"
   },
   {
    "depends_on": "eval:doc.ts_location==\"Office\"",
@@ -82,7 +81,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-13 16:39:17.267071",
+ "modified": "2021-12-14 13:09:45.977192",
  "modified_by": "Administrator",
  "module": "Thirvusoft",
  "name": "TS Meeting",
