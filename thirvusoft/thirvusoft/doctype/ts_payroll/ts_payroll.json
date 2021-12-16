@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ts_empid",
+ "creation": "2021-12-16 11:03:06.821587",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_empid",
+  "ts_empname",
+  "ts_role",
+  "ts_phone",
+  "ts_from",
+  "ts_to",
+  "ts_abs",
+  "ts_pf",
+  "ts_da",
+  "ts_basic"
+ ],
+ "fields": [
+  {
+   "fieldname": "ts_empid",
+   "fieldtype": "Data",
+   "label": "Employee ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "ts_empname",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "ts_role",
+   "fieldtype": "Select",
+   "label": "Employee Role",
+   "options": "Software Developer\nDesigner\nMarketing\nTech lead\nHouse Keeping"
+  },
+  {
+   "fieldname": "ts_phone",
+   "fieldtype": "Data",
+   "label": "Contact No",
+   "length": 10
+  },
+  {
+   "fieldname": "ts_from",
+   "fieldtype": "Date",
+   "label": "From date"
+  },
+  {
+   "fieldname": "ts_to",
+   "fieldtype": "Date",
+   "label": "To date"
+  },
+  {
+   "fieldname": "ts_abs",
+   "fieldtype": "Int",
+   "label": "Absent days"
+  },
+  {
+   "fieldname": "ts_pf",
+   "fieldtype": "Currency",
+   "label": "PF"
+  },
+  {
+   "fieldname": "ts_da",
+   "fieldtype": "Currency",
+   "label": "DA"
+  },
+  {
+   "fieldname": "ts_basic",
+   "fieldtype": "Currency",
+   "label": "Basic Pay",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-16 11:55:46.457826",
+ "modified_by": "Administrator",
+ "module": "Thirvusoft",
+ "name": "TS Payroll",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
