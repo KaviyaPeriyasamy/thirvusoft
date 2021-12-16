@@ -16,7 +16,8 @@
   "ts_abs",
   "ts_pf",
   "ts_da",
-  "ts_basic"
+  "ts_basic",
+  "data_11"
  ],
  "fields": [
   {
@@ -72,11 +73,15 @@
    "fieldtype": "Currency",
    "label": "Basic Pay",
    "read_only": 1
+  },
+  {
+   "fieldname": "data_11",
+   "fieldtype": "Data"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-16 11:55:46.457826",
+ "modified": "2021-12-16 16:04:38.243006",
  "modified_by": "Administrator",
  "module": "Thirvusoft",
  "name": "TS Payroll",
